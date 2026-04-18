@@ -33,10 +33,11 @@ export const register = async (req, res) => {
         });
 
     } catch (error) {
-        return res.status(500).json({
-            message: "Internal server error",
-            success: false
-        });
+        console.log(error);
+        // return res.status(500).json({
+        //     message: "Internal server error",
+        //     success: false
+        // });
     }
 }
 
